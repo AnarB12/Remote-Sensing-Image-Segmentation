@@ -25,7 +25,6 @@ from keras.layers import BatchNormalization
 
 
 class MaxPoolingWithArgmax2D(Layer):
-
     def __init__(
             self,
             pool_size=(2, 2),
@@ -67,7 +66,10 @@ class MaxPoolingWithArgmax2D(Layer):
 
 
 class MaxUnpooling2D(Layer):
-    def __init__(self, size=(2, 2), **kwargs):
+    def __init__(
+            self, 
+            size=(2, 2), 
+            **kwargs):
         super(MaxUnpooling2D, self).__init__(**kwargs)
         self.size = size
 
