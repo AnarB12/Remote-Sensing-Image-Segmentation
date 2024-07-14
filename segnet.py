@@ -9,7 +9,7 @@ Credit:
   arXiv preprint arXiv:1511.00561.
 - Keras implementation: https://github.com/danielenricocahall/Keras-SegNet
 
-Example usage:
+Example:
     model = SegNet(input_shape=(256, 256, 3), n_labels=21)
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 """
