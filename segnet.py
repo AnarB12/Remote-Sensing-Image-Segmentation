@@ -1,6 +1,6 @@
 """
-The SegNet architecture is based on the work by Badrinarayanan, Kendall, and Cipolla,
-and is specifically implemented in Keras in the repository by danielenricocahall:
+The SegNet architecture is based on the work by Badrinarayanan, Kendall, and Cipolla.
+The following is implementation in Keras in the repository by danielenricocahall:
 https://github.com/danielenricocahall/Keras-SegNet.
 
 Credit:
