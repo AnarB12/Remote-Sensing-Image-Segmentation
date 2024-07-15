@@ -17,8 +17,8 @@ def unet_resnet_backbone(input_shape):
     # Extract the layers for skip connections
     # These layers will be used in the decoder part of U-Net for concatenation
     layer_names = [
-        'input_1',        # 1024x1024
-        'conv1_relu',     # 512x512
+        # f'input_{}',    # 1024x1024
+        'conv1_relu',     # 512x512 (layer_1 output)
         'conv2_block3_out',  # 256x256
         'conv3_block4_out',  # 128x128
         'conv4_block6_out',  # 64x64
@@ -31,7 +31,8 @@ def unet_resnet_backbone(input_shape):
 
     # Start decoding from the bottleneck layer
     x = layers[-1]
-    for i in range(4, 0, -1):
+    # for i in range(4, 0, -1):
+    for i in range(3, -1, -1):
         # Upsampling
         x = Conv2DTranspose(256 // (2 ** (5 - i)), (2, 2), strides=(2, 2), padding='same')(x)
         x = BatchNormalization()(x)
@@ -54,7 +55,7 @@ def unet_resnet_backbone(input_shape):
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
 
-    x = Concatenate()([x, layers[0]])
+    # x = Concatenate()([x, layers[0]])
 
     x = Conv2D(64, (3, 3), padding='same')(x)
     x = BatchNormalization()(x)
