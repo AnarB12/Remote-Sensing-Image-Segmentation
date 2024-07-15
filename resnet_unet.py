@@ -50,7 +50,7 @@ def unet_resnet_backbone(input_shape):
         x = BatchNormalization()(x)
         x = Activation('relu')(x)
 
-    # Final upsampling and concatenation with the initial input layer
+    # Final upsampling
     x = Conv2DTranspose(64, (2, 2), strides=(2, 2), padding='same')(x)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
