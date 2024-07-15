@@ -144,7 +144,7 @@ def ASPP(x, filter_size, atrous_rates, batch_norm=False, kernel_initializer='he_
     rates to capture multi-scale information, followed by a global average pooling 
     branch. The outputs of all branches are concatenated to form the final output.
     """
-    GlobalPool = False
+    GlobalPool = True
     num_filters = x.shape[-1]
 
     # 1x1 Convolution Branch
