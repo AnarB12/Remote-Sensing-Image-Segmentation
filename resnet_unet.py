@@ -15,7 +15,7 @@ def unet_resnet_backbone(input_shape):
     base_model.trainable = False  # Freeze the ResNet layers to use as a feature extractor
 
     # Extract the layers for skip connections
-    # These layers will be used in the decoder part of U-Net for concatenation
+    # Layers that will be used in the decoder part of U-Net for concatenation
     layer_names = [
         # f'input_{}',    # 1024x1024
         'conv1_relu',     # 512x512 (layer_1 output)
@@ -34,7 +34,8 @@ def unet_resnet_backbone(input_shape):
     # for i in range(4, 0, -1):
     for i in range(3, -1, -1):
         # Upsampling
-        x = Conv2DTranspose(256 // (2 ** (5 - i)), (2, 2), strides=(2, 2), padding='same')(x)
+        x = Conv2DTranspose(256 // (2 ** (5 - i)), (2, 2), 
+                            strides=(2, 2), padding='same')(x)
         x = BatchNormalization()(x)
         x = Activation('relu')(x)
 
