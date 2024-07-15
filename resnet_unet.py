@@ -22,7 +22,7 @@ def unet_resnet_backbone(input_shape):
         'conv2_block3_out',  # 256x256
         'conv3_block4_out',  # 128x128
         'conv4_block6_out',  # 64x64
-        'conv5_block3_out'   # 32x32
+        'conv5_block3_out'   # 32x32 (Used as the bottleneck)
     ]
     layers = [base_model.get_layer(name).output for name in layer_names]
 
