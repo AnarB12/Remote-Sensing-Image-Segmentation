@@ -89,6 +89,8 @@ def save_prediction_with_metadata(input_image_path, prediction, output_file_path
         dst.write(prediction.squeeze(), 1)
 
 
+#=========================================================================================
+#=========================================================================================
 
 
 def predict_patches(input_dir_path, model_file_path, num_classes, img_size=(512, 512),
