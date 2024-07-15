@@ -76,3 +76,6 @@ if __name__ == "__main__":
   input_shape = (1024, 1024, 3)
   model = unet_resnet_backbone(input_shape)
   model.summary()
+
+
+
