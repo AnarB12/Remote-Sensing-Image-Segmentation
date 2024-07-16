@@ -34,19 +34,4 @@ The thesis associated with this repository is not published yet. Until then, fee
     Model_training.ipynb
     ```
 
-If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
-
-
-# Citation
-
-If you find this repository useful in your research, please consider citing it as follows:
-
-@misc{AnarB122024Remote-Sensing-Image-Segmentation,
-author = {Anar Batmunkh},
-title = {Remote-Sensing-Image-Segmentation},
-year = {2024},
-publisher = {GitHub},
-journal = {GitHub repository},
-howpublished = {\url{[https://github.com/your_username/repository_name](https://github.com/AnarB12/Remote-Sensing-Image-Segmentation)}},
-}
 
