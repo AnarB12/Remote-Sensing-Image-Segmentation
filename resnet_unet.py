@@ -11,6 +11,8 @@ from keras.models import Model
 
 def unet_resnet_backbone(input_shape):
     # Encoder (ResNet)
+    # inputs = Input(input_shape, dtype='float32')
+  
     base_model = ResNet50(weights='imagenet', include_top=False, input_shape=input_shape)
     base_model.trainable = False  # Freeze the ResNet layers to use as a feature extractor
 
