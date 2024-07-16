@@ -32,6 +32,7 @@ The thesis associated with this repository is not published yet. Until then, fee
 3. Train and Evaluate the model:
     ```bash
     Model_training.ipynb
+    Model_training_multi.ipynb
     ```
 
 
