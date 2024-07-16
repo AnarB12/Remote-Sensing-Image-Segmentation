@@ -1,4 +1,4 @@
-# Satellite Image Segmentation for Thesis
+# Satellite Image Segmentation from Aerial Imagery
 
 ## Overview
 
