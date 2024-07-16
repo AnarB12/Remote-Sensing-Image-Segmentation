@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a version of code used for my **master's thesis** on satellite image segmentation. The primary focus of this project is on segmenting remote sensing images using the U-Net architectures. It includes data preprocessing, model training, and evaluation.
+This repository contains a version of code used for my **master's thesis** on satellite image segmentation. The primary focus of this project is on segmenting remote sensing images using the U-Net architectures. It includes data preprocessing, model training, and evaluation. This is currently a simple application, but it will be updated and extended over time.
 
 ## Features
 
@@ -39,7 +39,7 @@ The thesis associated with this repository is not published yet. Until then, fee
 If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
 
 
-## Citation
+## Cite
 
 If you find this repository useful in your research, please consider citing it as follows:
 
