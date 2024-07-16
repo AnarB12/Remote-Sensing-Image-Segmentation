@@ -35,3 +35,22 @@ The thesis associated with this repository is not published yet. Until then, fee
     ```
 
 
+If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
+
+
+# Citation
+
+If you find this repository useful in your research, please consider citing it as follows:
+
+Batmunkh, A. (2024). Satellite Image Segmentation. GitHub. [https://github.com/username/repo-name](https://github.com/AnarB12/Remote-Sensing-Image-Segmentation)
+
+```bash
+@misc{Batmunkh:2024,
+author = {Anar Batmunkh},
+title = {Remote-Sensing-Image-Segmentation},
+year = {2024},
+publisher = {GitHub},
+journal = {GitHub repository},
+howpublished = {\url{https://github.com/AnarB12/Remote-Sensing-Image-Segmentation}},
+}
+```
