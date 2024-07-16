@@ -1,4 +1,4 @@
-# Satellite Image Segmentation from Aerial Imagery
+# Remote Sensing Image Segmentation
 
 ## Overview
 
