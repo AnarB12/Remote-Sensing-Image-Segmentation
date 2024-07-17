@@ -39,7 +39,7 @@ The thesis associated with this repository is not published yet. Until then, fee
 If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
 
 
-## Cite
+
 
 If you find this repository useful in your research, please consider citing it as follows:
 
