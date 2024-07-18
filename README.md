@@ -40,18 +40,5 @@ If you find any issues or have suggestions for improvements, please create an is
 
 
 
-
-If you find this repository useful in your research, please consider citing it as follows:
-
 Batmunkh, A. (2024). Remote-Sensing-Image-Segmentation. GitHub. [https://github.com/AnarB12/Remote-Sensing-Image-Segmentation](https://github.com/AnarB12/Remote-Sensing-Image-Segmentation)
 
-```bash
-@misc{Batmunkh:2024,
-Author = {Anar Batmunkh},
-Title = {Remote-Sensing-Image-Segmentation},
-Year = {2024},
-Publisher = {GitHub},
-Journal = {GitHub repository},
-Howpublished = {\url{https://github.com/AnarB12/Remote-Sensing-Image-Segmentation}},
-}
-```
