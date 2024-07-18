@@ -39,6 +39,6 @@ The thesis associated with this repository is not published yet. Until then, fee
 If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
 
 
-
+## Cite
 Batmunkh, A. (2024). Remote-Sensing-Image-Segmentation. GitHub. [https://github.com/AnarB12/Remote-Sensing-Image-Segmentation](https://github.com/AnarB12/Remote-Sensing-Image-Segmentation)
 
