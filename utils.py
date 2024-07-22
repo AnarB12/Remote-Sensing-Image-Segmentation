@@ -468,29 +468,37 @@ def plot_metrics_multi(metrics_dict, class_names):
     plt.show()
 
 
-def plot_conf_matrix_multi(conf_matrix, class_labels, normalize=False):
+def plot_conf_matrix_multi(conf_matrix, class_labels, normalize='none'):
     """
     Plot the confusion matrix using a heatmap.
 
     Parameters:
     conf_matrix (numpy.ndarray): The confusion matrix.
     class_labels (list): List of class labels.
-    normalize (bool): Whether to normalize the values in the confusion matrix.
+    normalize (str): The normalization method ('row', 'column', 'all', 'none').
     """
-    if normalize:
+    if normalize == 'row':
         conf_matrix = conf_matrix.astype('float') / conf_matrix.sum(axis=1)[:, np.newaxis]
+        title = 'Normalized Confusion Matrix (By Row)'
+    elif normalize == 'column':
+        conf_matrix = conf_matrix.astype('float') / conf_matrix.sum(axis=0)
+        title = 'Normalized Confusion Matrix (By Column)'
+    elif normalize == 'all':
+        conf_matrix = conf_matrix.astype('float') / conf_matrix.sum()
+        title = 'Normalized Confusion Matrix (By Total Sum)'
+    else:
+        title = 'Confusion Matrix'
 
     plt.figure(figsize=(10, 8))
     sns.set_theme(font="Times New Roman")
-    sns.heatmap(conf_matrix, annot=True, fmt='.2f' if normalize else 'd', cmap='Reds', 
+    sns.heatmap(conf_matrix, annot=True, fmt='.2f' if normalize != 'none' else 'd', cmap='Reds', 
                 xticklabels=class_labels, yticklabels=class_labels, cbar_kws={'label': 'Scale'})
     
     plt.xlabel('Predicted Label', fontsize=14, labelpad=20, fontname='Times New Roman')
     plt.ylabel('True Label', fontsize=14, labelpad=20, fontname='Times New Roman')
     plt.xticks(fontsize=12, rotation=45, ha='right', fontname='Times New Roman')
     plt.yticks(fontsize=12, rotation=0, fontname='Times New Roman')
-    plt.title('Normalized Confusion Matrix' if normalize else 'Confusion Matrix', 
-              fontsize=16, fontname='Times New Roman', pad=30)
+    plt.title(title, fontsize=16, fontname='Times New Roman', pad=30)
     plt.show()
 
 
