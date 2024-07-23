@@ -6,10 +6,10 @@ This repository contains a version of code used for my **master's thesis** on sa
 
 ## Features
 
-- **Data Preprocessing:** 
-- **Model Training:** 
-- **Evaluation:**
-- **Visualization:** 
+- **Data Preprocessing** 
+- **Model Training** 
+- **Evaluation**
+- **Visualization** 
 
 ## License
 
