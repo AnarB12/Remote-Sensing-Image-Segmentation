@@ -17,7 +17,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Publication
 
-The thesis associated with this repository is not published yet. Until then, feel free to explore the code and use it as per the license terms. 
+The thesis associated with this repository is not published yet. But feel free to explore the code and use it as per the license terms. 
 
 ## Usage
 
