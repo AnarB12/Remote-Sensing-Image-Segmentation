@@ -311,4 +311,4 @@ dependencies:
       - widgetsnbextension==4.0.8
       - winshell==0.6
       - wrapt==1.15.0
-prefix: C:\Users\banar\anaconda3\envs\Deep_Learning
+prefix: C:\Users\User\anaconda3\envs\Deep_Learning
