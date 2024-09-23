@@ -15,8 +15,6 @@ This repository contains a version of code used for my **master's thesis** on sa
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Publication
-
 The thesis associated with this repository is not published yet. But feel free to explore the code and use it as per the license terms. 
 
 ## Usage
